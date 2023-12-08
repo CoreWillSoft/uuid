@@ -234,3 +234,6 @@ tasks.withType<AbstractKotlinCompileTool<*>>().configureEach {
         dependsOn(generateProjDirValTask)
     }
 }
+task("testClasses").doLast {
+    println("This is a dummy testClasses task")
+}
