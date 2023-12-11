@@ -5,8 +5,8 @@ import org.jetbrains.kotlin.konan.target.HostManager
 plugins {
     kotlin("multiplatform") version "1.9.20"
     id("org.jetbrains.dokka") version "1.8.20"
-    id("maven-publish")
-    id("signing")
+//    id("maven-publish")
+//    id("signing")
 }
 
 repositories {
@@ -114,7 +114,7 @@ checkTask.configure {
     dependsOn(ktlint)
 }
 
-apply(from = "publish.gradle")
+//apply(from = "publish.gradle")
 
 // Generate PROJECT_DIR_ROOT for referencing local mocks in tests
 
